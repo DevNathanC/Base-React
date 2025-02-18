@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.css';
 
-const Card = ({children, color, showCardColor}) => {
+const Card = ({children, color ='orange', showCardColor}) => {
   return (
     <div 
     className="card" 
@@ -10,10 +10,6 @@ const Card = ({children, color, showCardColor}) => {
       {children}
     </div>
   );
-}
-
-Card.defaultProps = {
-  color:'orange'
 }
 
 export default Card;

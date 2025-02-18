@@ -5,12 +5,10 @@ const sayHello = () => {
   console.log('Ola');
 }
 
-const Button = (props) => {
-  return <button className='btn' onClick={sayHello}>{props.label}</button>
+const Button = ({label = 'Botão padrão'}) => {
+  return <button className='btn' onClick={sayHello}>{label}</button>
 }
 
-Button.defaultProps = {
-  label: 'Botão padrão'
-}
+
 
 export default Button;

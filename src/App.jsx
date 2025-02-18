@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Button/>
+      <Button label='Primeiro botao'/>
       <Button/>
       <Cards/>
     </>

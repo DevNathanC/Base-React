@@ -4,7 +4,7 @@ import Card from "../card/card";
 const cardsTitle = ['Title Card 1', 'Title Card 2', 'Title Card 3'];
 
 const showCardColor = (color) => {
-    console.log('Card clicado');
+    console.log(color);
     
 }
 
@@ -22,7 +22,7 @@ const Cards = () => {
                 )
                 )}
 
-                <Card color='blue'>
+                <Card color='blue' showCardColor={showCardColor}>
                     <h3>Card com fundo azul</h3>
                     <p>Texto do card 1</p>
                 </Card>
